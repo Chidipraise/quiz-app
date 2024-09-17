@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start-screen">
+            <h1 class="heading">Quiz App</h1>
+            <div class="settings">
+                <label for="num-question">Number of Questions</label>
+                <select id="num-question">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                </select>
+                <label for="category">Select Category</label>
+                <select id="category">
+                    <option value="">Any Category</option>
+                    <option value="10">General Knowledge</option>
+                    <option value="15">Books</option>
+                    <option value="20">Films</option>
+                    <option value="25">Music</option>
+                    <option value="30">Television</option>
+                    <option value="35">Video Games</option>
+                    <option value="40">Board Games</option>
+                    <option value="45">Science and Nature</option>
+                    <option value="50">Computer</option>
+                    <option value="55">Mathematics</option>
+                    <option value="60">Mythology</option>
+                    <option value="65">Sports</option>
+                    <option value="70">Geography</option>
+                    <option value="75">History</option>
+                    <option value="80">Politics</option>
+                    <option value="85">Art</option>
+                    <option value="90">Vehicles</option>
+                </select>
+                <label for="difficulty">Select Difficulty</label>
+                <select id="difficulty">
+                    <option value="">Any Difficulty</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <label for="time">Select Time Per Question</label>
+                <select id="time">
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="60">60</option>
+                </select>
+            </div>
+            <button class="btn start">Start Quiz</button>
+        </div>
+        <div class="quiz hide">
+            <div class="timer">
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                    <span class="progress-text"></span>
+                </div>
+            </div>
+            <div class="question-wrapper">
+                <div class="number">
+                    Question <span class="current"></span><span class="total">/10</span>
+                </div>
+                <div class="question">This is a Question</div>
+            </div>
+            <div class="answer-wrapper">
+                <!-- Answer options will be generated dynamically -->
+            </div>
+            <button class="btn submit" disabled>Submit</button>
+            <button class="btn next">Next</button>
+        </div>
+        <div class="end-screen hide">
+            <h1 class="heading">Quiz App</h1>
+            <div class="score">
+                <span class="score-text">Your Score:</span>
+                <div>
+                    <span class="final-score">0</span>
+                    <span class="total-score">/10</span>
+                </div>
+                <button class="btn restart">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
